@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Light Bulb</title>
+	<link rel="icon" href="tr_off.JPG">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+
+	<center>
+		<div id="heading">
+			<p><u>Light Bulb</u></p>
+		</div>
+	</center>
+
+	<div id="buttons">
+		<button type="button" class="btn btn-success" id="on" onclick="function_on()">On</button>&nbsp;&nbsp;
+		<button type="button" class="btn btn-danger" id="off" onclick="function_off()">Off</button>
+	</div>
+
+	<div class="vl">
+		<img src="Bulboff.png" id="Bulbimg" width="400px" height="400px">
+		<p id="text">Bulb is <font color="red">OFF !</font></p>
+	</div>
+
+	<div id="created">
+		<p>Created By- Divyansh Singh</p>
+	</div>
+ 	
+
+		<script>
+			var btnon=document.getElementById('on');
+			var btnoff=document.getElementById('off');
+
+			function function_on()
+			{
+				document.getElementById("Bulbimg").src="Bulbon.png";
+				document.getElementById('text').innerHTML="Bulb is <font color='green'>ON !</font>";
+			}
+			function function_off()
+			{
+				document.getElementById("Bulbimg").src="Bulboff.png";
+				document.getElementById('text').innerHTML="Bulb is <font color='red'>OFF !</font>";
+			}
+		</script>
+
+
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</body>
+</html>
